@@ -8,7 +8,7 @@ declare global {
 
 export default function Terminal() {
     function documentoCarregado() {
-        if (document.readyState === "interactive") {
+        if (window.document.readyState === "interactive") {
             setTimeout(() => {
                 let btn = document.getElementById("btn-modal");
                 btn?.click();
@@ -25,7 +25,7 @@ export default function Terminal() {
 
     useEffect(() => {
         documentoCarregado();
-    }, [document.readyState]);
+    }, [window.document.readyState]);
 
     return (
         <div>
