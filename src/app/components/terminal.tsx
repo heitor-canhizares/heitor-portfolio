@@ -28,7 +28,7 @@ export default function Terminal() {
                 id="btn-modal"
                 onClick={() => window.modal.showModal()}
             ></button>
-            <dialog id="modal" className="modal">
+            <dialog id="modal" className="modal backdrop-brightness-[0.05]">
                 <form method="dialog" className="modal-box p-0">
                     <div className="mockup-code typewriter">
                         <div>
