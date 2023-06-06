@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
 
+declare global {
+    interface Window {
+        readonly modal: HTMLDialogElement;
+    }
+}
+
 export default function Terminal() {
     function documentoCarregado() {
         if (document.readyState === "interactive") {
