@@ -139,7 +139,7 @@ table {
     border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end 10;
-    animation-delay: 250ms;
+    animation-delay: 1s;
 }
 
 /* The typing effect */
