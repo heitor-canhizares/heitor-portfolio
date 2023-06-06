@@ -6,22 +6,20 @@ declare global {
 
 export default function Terminal() {
     function documentoCarregado() {
-        if (typeof window !== "undefined") {
-            setTimeout(() => {
-                let btn = document.getElementById("btn-modal");
-                btn?.click();
-            }, 750);
-            setTimeout(() => {
-                let lastpart = document.getElementById("pronto");
-                if (lastpart) lastpart.style.display = "block";
-            }, 3000);
-            setTimeout(() => {
-                window.modal.close();
-            }, 3500);
-        }
+        setTimeout(() => {
+            let btn = document.getElementById("btn-modal");
+            btn?.click();
+        }, 750);
+        setTimeout(() => {
+            let lastpart = document.getElementById("pronto");
+            if (lastpart) lastpart.style.display = "block";
+        }, 3000);
+        setTimeout(() => {
+            window.modal.close();
+        }, 3500);
     }
 
-    documentoCarregado();
+    if (typeof window !== "undefined") documentoCarregado();
 
     return (
         <div>
