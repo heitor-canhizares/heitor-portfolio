@@ -1,7 +1,3 @@
-"use client";
-
-import { useState, useEffect } from "react";
-
 declare global {
     interface Window {
         readonly modal: HTMLDialogElement;
@@ -10,7 +6,7 @@ declare global {
 
 export default function Terminal() {
     function documentoCarregado() {
-        if (window.document.readyState === "interactive") {
+        if (typeof window !== "undefined") {
             setTimeout(() => {
                 let btn = document.getElementById("btn-modal");
                 btn?.click();
@@ -25,9 +21,7 @@ export default function Terminal() {
         }
     }
 
-    useEffect(() => {
-        documentoCarregado();
-    }, [window.document.readyState]);
+    documentoCarregado();
 
     return (
         <div>
