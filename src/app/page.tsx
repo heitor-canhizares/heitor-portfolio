@@ -1,10 +1,10 @@
-"use client";
 import Terminal from "./components/terminal";
 
 export default function Home() {
     return (
-        <div className="pt-10">
-            {/* <div className="grid grid-flow-row justify-center">
+        <div>
+            <Terminal />
+            <div className="grid grid-flow-row justify-center">
                 <div className="">
                     <span>Meu nome é Heitor Eduardo</span>
                 </div>
@@ -12,8 +12,7 @@ export default function Home() {
                     <span>Desenvolvedor Front End</span>
                 </div>
                 <div className="">conteudo</div>
-            </div> */}
-            <Terminal />
+            </div>
         </div>
     );
 }

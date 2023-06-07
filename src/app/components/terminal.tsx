@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from "react";
+
 declare global {
     interface Window {
         readonly modal: HTMLDialogElement;
@@ -7,8 +10,7 @@ declare global {
 export default function Terminal() {
     function documentoCarregado() {
         setTimeout(() => {
-            let btn = document.getElementById("btn-modal");
-            btn?.click();
+            window.modal.showModal();
         }, 750);
         setTimeout(() => {
             let lastpart = document.getElementById("pronto");
@@ -16,20 +18,17 @@ export default function Terminal() {
         }, 3000);
         setTimeout(() => {
             window.modal.close();
+            window.document.body.style.opacity = "100";
         }, 3500);
     }
-
-    if (typeof window !== "undefined") documentoCarregado();
+    useEffect(() => {
+        if (typeof window !== "undefined") documentoCarregado();
+    }, []);
 
     return (
-        <div>
-            <button
-                className="btn hidden"
-                id="btn-modal"
-                onClick={() => window.modal.showModal()}
-            ></button>
+        <div className="z-10">
             <dialog id="modal" className="modal backdrop-brightness-[0.05]">
-                <form method="dialog" className="modal-box p-0">
+                <form method="dialog" className="modal-box p-1 bg-black">
                     <div className="mockup-code typewriter">
                         <div>
                             <pre data-prefix="$" className="pr-0">

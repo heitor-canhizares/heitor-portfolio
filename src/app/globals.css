@@ -128,6 +128,10 @@ table {
 @tailwind utilities;
 @import "daisyui/dist/full.css";
 
+dialog {
+    outline: none;
+}
+
 .typewriter pre {
     padding-right: 0px !important;
 }
@@ -138,7 +142,7 @@ table {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end 10;
+    animation: typing 3.5s steps(60, end), blink-caret 0.5s step-end infinite;
     animation-delay: 1s;
 }
 
