@@ -27,7 +27,7 @@ export default function Terminal() {
 
     return (
         <div className="z-10">
-            <dialog id="modal" className="modal backdrop-brightness-[0.05]">
+            <dialog id="modal" className="modal backdrop-brightness-[0.05] ">
                 <form method="dialog" className="modal-box p-1 bg-black">
                     <div className="mockup-code typewriter">
                         <div>

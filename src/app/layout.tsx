@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: "Home page of my portfolio",
     authors: [
         {
-            name: "Heitor Eduardo Avelar Theodoro",
+            name: "Heitor Eduardo Avelar Theodoro Canhizares",
             url: "https://www.linkedin.com/in/heitor-eduardo-avelar-theodoro-canhizares-4835b0216/",
         },
     ],
@@ -22,8 +22,9 @@ export const metadata: Metadata = {
     applicationName: "My Portfolio",
     manifest: "site.webmanifest",
     icons: {
-        apple: "apple-touch-icon.png",
-        icon: ["favicon-32x32.png", "favicon-16x16.png"],
+        apple: "/image/apple-touch-icon.png",
+        icon: ["/image/favicon-32x32.png", "/image/favicon-16x16.png"],
+        shortcut: "/image/favicon.ico",
     },
 };
 
