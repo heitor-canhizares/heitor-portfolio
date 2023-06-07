@@ -137,6 +137,7 @@ dialog {
 }
 
 .typewriter div:first-child {
+    opacity: 0;
     color: #fff;
     max-width: fit-content;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -153,6 +154,7 @@ dialog {
     }
     to {
         width: 100%;
+        opacity: 100;
     }
 }
 
