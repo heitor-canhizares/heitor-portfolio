@@ -16,8 +16,6 @@ export default function Navbar() {
         },
     });
 
-    useEffect(() => {});
-
     useEffect(() => {
         if (typeof window !== "undefined") documentRef(window.document as any);
 
@@ -40,28 +38,28 @@ export default function Navbar() {
                 </div>
                 <div className="drawer-side" {...handleLeft}>
                     <label htmlFor="menu" className="drawer-overlay "></label>
-                    <menu className="menu w-1/2 justify-evenly h-full bg-slate-600 p-0 opacity-80 rounded-e-full items-center">
+                    <menu className="menu w-1/2 justify-evenly h-full bg-neutral p-0 opacity-80 rounded-e-full items-center">
                         <Link
                             href={"/"}
-                            className="btn btn-ghost normal-case text-xl text-white rounded-full w-fit"
+                            className="btn btn-ghost normal-case text-xl text-neutral-content rounded-full w-fit"
                         >
                             Home
                         </Link>
                         <Link
                             href={"/About"}
-                            className="btn btn-ghost normal-case text-xl text-white rounded-full w-fit"
+                            className="btn btn-ghost normal-case text-xl text-neutral-content rounded-full w-fit"
                         >
                             Sobre
                         </Link>
                         <Link
                             href={"/Projects"}
-                            className="btn btn-ghost normal-case text-xl text-white rounded-full w-fit"
+                            className="btn btn-ghost normal-case text-xl text-neutral-content rounded-full w-fit"
                         >
                             Projetos
                         </Link>
                         <Link
                             href={"/Contact"}
-                            className="btn btn-ghost normal-case text-xl text-white rounded-full w-fit"
+                            className="btn btn-ghost normal-case text-xl text-neutral-content rounded-full w-fit"
                         >
                             Contato
                         </Link>

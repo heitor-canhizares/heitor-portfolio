@@ -20,6 +20,11 @@ export const metadata: Metadata = {
         viewportFit: "auto",
     },
     applicationName: "My Portfolio",
+    manifest: "/site.webmanifest",
+    icons: {
+        apple: "/apple-touch-icon.png",
+        icon: ["/favicon-32x32.png", "/favicon-16x16.png"],
+    },
 };
 
 export default function RootLayout({
