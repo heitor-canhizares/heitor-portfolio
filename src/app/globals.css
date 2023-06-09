@@ -131,7 +131,7 @@ table {
 
 @font-face {
     font-family: "South-crew";
-    src: url("SOUTH-CREW.ttf") format("truetype");
+    src: url("./asset/SOUTH-CREW.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
